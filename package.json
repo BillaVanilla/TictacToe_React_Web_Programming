@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage":"https://BillaVanilla.github.io/TictacToe_React_Web_Programming",
   "jest": {
     "transform": {
       "^.+\\.(js|jsx)$": "babel-jest"
@@ -11,7 +12,9 @@
   "scripts": {
     "start": "parcel",
     "start-dev": "parcel src/index.html --open -p 8080",
-    "build": "parcel build"
+    "build": "parcel build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
